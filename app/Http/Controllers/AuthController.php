@@ -18,7 +18,7 @@ class AuthController extends Controller
             'password' => 'required|string|min:6|confirmed',
         ]);
 
-        // Si la validación falla, devolver errores
+        // Si la validación falla, devuelve errores
         if ($validator->fails()) {
             return response()->json(['errors' => $validator->errors()], 422);
         }
