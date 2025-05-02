@@ -4,7 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 
-// Para ver usuarios desde el navegador con GET
+// Para ver usuarios desde el navegador con GET 
 Route::get('/register', function () {
     return response()->json([
         'message' => 'Usuarios registrados',
